@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  include ./menu.jade
+  h1= title
+  p Welcome to #{title}
+
+  p It's #{title} page
+
+  img.img-circle(src='./images/adam.jpg')   
+  br
+  
+  include ./back.jade
+
+

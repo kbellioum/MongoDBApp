@@ -1,0 +1,27 @@
+extends layout
+block content
+
+  include ./menu.jade
+  
+  h1 #{title}
+
+  div.container
+    div.content
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Birth date
+            th Action
+        tbody
+          each item in parents
+            tr
+              td   
+                 a(href='/#{item.name}') #{item.name}
+              td 
+                 #{item.birthdate}
+              td
+                 a(href='/api/show/#{item._id}/') show  
+                 a(href='/api/delete/#{item._id}') delete
+
+    include ./back.jade

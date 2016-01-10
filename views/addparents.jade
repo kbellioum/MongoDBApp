@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    
+    include ./menu.jade
+
+    h1 #{title}
+    .container
+       form.form-signin(action="/addparents", method="post")
+         h2.form-signin-heading Please type your name
+         input.input-block-level(type="text", name="name", placeholder="Parents Name")
+         h2.form-signin-heading Birth Date
+         input.input-block-level(type="text", name="birthdate", placeholder="00 00 0000")
+         h2.form-signin-heading Father Name
+         input.input-block-level(type="text", name="father", placeholder="Father Name")
+         button.btn.btn-large.btn-primary(type="submit") Submit
+       br
+       br  
+       
+
+       include ./back.jade

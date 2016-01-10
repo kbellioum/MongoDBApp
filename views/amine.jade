@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  
+  include ./menu.jade
+  div.container
+    div.content
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Birth date
+        tbody
+          tr
+            td   
+               a(href='/hani') Hani
+            td -- --- ----
+          tr
+            td 
+              a(href='/inas') Inas
+            td -- --- ----
+
+    
+
+
+    include ./back.jade

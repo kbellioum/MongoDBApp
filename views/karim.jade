@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  include ./menu.jade
+  div.container
+    div.content
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Birth date
+        tbody
+          tr
+            td   
+               a(href='/adam') Adam
+            td 29 Oct 2004
+          tr
+            td 
+              a(href='/rayan') Rayan
+            td 10 Nov 2015
+
+
+    include ./back.jade
+
